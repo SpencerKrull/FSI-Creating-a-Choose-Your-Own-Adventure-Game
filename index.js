@@ -21,8 +21,16 @@ if(firstAnswer === "left"){
 
         else if(secondAnswer === "staircase")
             secondAnswer = window.prompt('After ascending the staircase, you discover a shiny blue stone, which you take home and cherish forever.')
-            
-else if(firstAnswer === "right"){
-    let secondAnswer = window.prompt('You come across a snoring dragon. On the other side of him, you see a shiny chest of treasure. Another path would lead you away from the dragon altogether. Which path do you take?')
 
-}
+else if(firstAnswer === "right"){
+    secondAnswer = window.prompt('You come across a snoring dragon. On the other side of him, you see a shiny chest of treasure. Another path would lead you away from the dragon altogether. Which path do you take?')
+}   
+    if(secondAnswer === "past")
+        secondAnswer = window.prompt('The dragon wakes up and sits upright. You only have a moment to respond, to stay or to run?')
+
+        if(secondAnswer === "stay")
+            secondAnswer = window.prompt('You and the dragon have an uplifting conversation about local politics and become lifelong friends.')
+
+        else if(secondAnswer === "run")
+            secondAnswer = window.prompt('Quickly, you run back to the cave entrance. Sheepish, you return home.')
+
